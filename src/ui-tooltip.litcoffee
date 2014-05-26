@@ -45,9 +45,12 @@ it can be seen easily.
 
       mouseenter: ->
         @position()
+        @$.tooltip.classList.remove "hidden"
 
       mouseleave: ->
         @position()
+        @$.tooltip.classList.add "hidden"
+
 
 ##Polymer Lifecycle
 

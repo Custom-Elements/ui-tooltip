@@ -44,6 +44,9 @@ it can be seen easily.
 
 
 
+
+
+
 ##Polymer Lifecycle
 
 

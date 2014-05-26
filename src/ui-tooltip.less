@@ -4,6 +4,7 @@
   display: inline-block;
   position: relative;
   box-sizing: border-box;
+  perspective: 1000;
 }
 
 #tooltip {
@@ -15,8 +16,16 @@
   color: @color-text;
   background-color: @white;
   z-index: 1000;
+  transform-style: preserve-3d;
   padding: 0.8em 1.2em;
+  opacity: @nearlyOpaque;
   .box-shadow(1px 1px 1px @hairline-grey);
+  .transition(@transition);
+  .transform(rotateX(0deg));
+  &.hidden {
+    .transform(rotateX(90deg));
+    opacity: 0;
+  }
   &:before {
     position: absolute;
     box-sizing: border-box;

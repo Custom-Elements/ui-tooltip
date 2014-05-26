@@ -10,13 +10,50 @@
       body {
         font-family: "Helvetica Neue", "Helvetica", Arial;
       }
+      #a {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      #b {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      #c {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+      #d {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      #e {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
     </style>
   </head>
   <body unresolved>
-    <div id="holder">
-      <ui-tooltip>
-      </ui-tooltip>
-    </div>
+    <ui-tooltip id="a" label="Woo Hoo!">
+    <span>Upper Left</span>
+    </ui-tooltip>
+    <ui-tooltip id="b" label="Yessir!">
+    <span>Upper Right</span>
+    </ui-tooltip>
+    <ui-tooltip id="c" label="reebob!">
+    <span>Lower Right</span>
+    </ui-tooltip>
+    <ui-tooltip id="d" label="Down here buddy">
+    <span>Lower Left</span>
+    </ui-tooltip>
+    <ui-tooltip id="e">
+    <span>Middle</span>
+    <span tip>This is tooltip content</span>
+    </ui-tooltip>
     <script>
       document.addEventListener('polymer-ready', function() {
         //poke your element here

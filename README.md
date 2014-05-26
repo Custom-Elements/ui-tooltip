@@ -36,8 +36,6 @@ screen size.
 
 
 
-
-
 ##Event Handlers
 Mouse motion is handled to automatically show and position the element so that
 it can be seen easily.
@@ -47,6 +45,7 @@ it can be seen easily.
 
 
 ##Polymer Lifecycle
+
 
 
 

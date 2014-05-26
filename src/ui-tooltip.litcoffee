@@ -32,8 +32,6 @@ screen size.
         yStep = document.documentElement.clientHeight / 3
         offsetX = 'left'
         if tip.left < xStep*2
-          offsetX = 'center'
-        if tip.left < xStep
           offsetX = 'right'
         offsetY = 'up'
         if tip.top < yStep*2
@@ -58,6 +56,7 @@ it can be seen easily.
       ready: ->
 
       attached: ->
+        @position()
 
       domReady: ->
 

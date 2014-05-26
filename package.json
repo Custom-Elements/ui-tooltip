@@ -2,19 +2,20 @@
   "name": "ui-tooltip",
   "version": "0.0.0",
   "dependencies": {
-    "coffeeify": "",
-    "coffee-script": "",
     "browserify": "",
     "browserify-data": "",
+    "coffee-script": "",
+    "coffeeify": "",
+    "express": "",
     "gulp": "",
     "gulp-browserify": "",
-    "gulp-shell": "",
-    "gulp-less": "",
-    "gulp-replace": "",
-    "gulp-rename": "",
     "gulp-concat": "",
-    "vulcanize": "",
-    "express": ""
+    "gulp-less": "",
+    "gulp-rename": "",
+    "gulp-replace": "",
+    "gulp-shell": "",
+    "ui-styles": "git+https://github.com/wballard/ui-styles.git",
+    "vulcanize": ""
   },
   "license": "MIT",
   "scripts": {

@@ -2,25 +2,14 @@
   "name": "ui-tooltip",
   "version": "0.0.0",
   "dependencies": {
-    "coffeeify": "",
-    "coffee-script": "",
-    "browserify": "",
-    "browserify-data": "",
-    "gulp": "",
-    "gulp-browserify": "",
-    "gulp-shell": "",
-    "gulp-less": "",
-    "gulp-replace": "",
-    "gulp-rename": "",
-    "gulp-concat": "",
-    "vulcanize": "",
-    "express": "",
-    "polymer": "git://github.com/Custom-Elements/polymer",
-    "ui-styles": "git://github.com/custom-elements/ui-styles"
+    "polymer-tools": "git://github.com/custom-elements/polymer-tools#master",
+    "polymer": "git://github.com/custom-elements/polymer#master",
+    "ui-styles": "git://github.com/custom-elements/ui-styles#master",
+    "ui-fonts": "git://github.com/custom-elements/ui-fonts#master"
   },
-  "license": "MIT",
+  "license": "ISC",
   "scripts": {
-    "postinstall": "gulp build",
-    "test": "gulp watch"
+    "postinstall": "polymer-build src/ build/",
+    "test": "polymer-build watch . src/ build/"
   }
 }

@@ -2,7 +2,7 @@
   "name": "ui-tooltip",
   "version": "0.0.0",
   "dependencies": {
-    "polymer-tools": "git://github.com/custom-elements/polymer-tools#master",
+    "polymer-build": "",
     "polymer": "git://github.com/custom-elements/polymer#master",
     "ui-styles": "git://github.com/custom-elements/ui-styles#master",
     "ui-fonts": "git://github.com/custom-elements/ui-fonts#master"

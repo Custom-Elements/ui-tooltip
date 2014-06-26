@@ -9,7 +9,6 @@
   },
   "license": "ISC",
   "scripts": {
-    "postinstall": "polymer-build src/ build/",
     "test": "polymer-build watch . src/ build/"
   }
 }

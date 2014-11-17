@@ -1,10 +1,10 @@
 @import "../node_modules/ui-styles/variables";
+@import "../node_modules/ui-styles/visual-elements";
 
 :host {
   display: inline-block;
   position: relative;
   box-sizing: border-box;
-  perspective: 1000;
 }
 
 #tooltip {
@@ -14,13 +14,10 @@
   font-size: 0.85rem;
   border: 1px solid @color-focus-border;
   color: @color-text;
-  font-weight: 200;
   background-color: @white;
   z-index: 1000;
-  transform-style: preserve-3d;
-  padding: 0.8em 1.2em;
-  opacity: @nearlyOpaque;
-  .box-shadow(1px 1px 1px @hairline-grey);
+  padding: @pad;
+  .two-shadow;
   .transition(@transition);
   .transform(rotateX(0deg));
   &.hidden {

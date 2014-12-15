@@ -42,17 +42,31 @@ screen size. This gets called automatically on hover.
         @display= "#{offsetX} #{offsetY}"
 
 
+      show: ->
+        clearTimeout @delay
+        @delay = setTimeout =>
+          @position()
+          @$.tooltip.classList.remove "hidden"
+        , 1000
+
+      hide: ->
+        clearTimeout @delay
+        @position()
+        @$.tooltip.classList.add "hidden"
+
+
 ##Event Handlers
 Mouse motion is handled to automatically show and position the element so that
 it can be seen easily.
 
       mouseenter: ->
-        @position()
-        @$.tooltip.classList.remove "hidden"
+        @show()
 
       mouseleave: ->
-        @position()
-        @$.tooltip.classList.add "hidden"
+        @hide()
+
+      mousemove: ->
+        @show()
 
 
 ##Polymer Lifecycle

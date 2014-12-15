@@ -1,4 +1,4 @@
-<polymer-element name="ui-tooltip" attributes="label display" on-mouseenter="mouseenter" on-mouseleave="mouseleave">
+<polymer-element name="ui-tooltip" attributes="label display" on-mouseenter="mouseenter" on-mouseleave="mouseleave" on-mousemove="{{mousemove}}">
 <template>
   <link rel="stylesheet" type="text/css" href="./ui-tooltip.less">
   <div id="tooltip" class="{{display}} hidden">

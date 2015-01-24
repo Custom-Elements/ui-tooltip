@@ -35,6 +35,11 @@
         top: 50%;
         left: 50%;
       }
+      #f {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+      }
     </style>
   </head>
   <body unresolved>
@@ -53,6 +58,9 @@
     <ui-tooltip id="e"  delay="2000">
     <span>Middle with a custom delay of 2 seconds</span>
     <span tip>This is <em>tooltip <b>content</b></em></span>
+    </ui-tooltip>
+    <ui-tooltip id="f" label="I've been moved!" xposition="80" yposition="130">
+    <span>Tweek tooltip location</span>
     </ui-tooltip>
 
     <script>

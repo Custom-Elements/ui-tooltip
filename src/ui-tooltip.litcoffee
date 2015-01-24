@@ -33,6 +33,13 @@ screen size. This gets called automatically on hover.
         body = document.querySelector('body').getBoundingClientRect()
         xStep = document.documentElement.clientWidth / 3
         yStep = document.documentElement.clientHeight / 3
+
+        if @hasAttribute 'xposition'
+          @$.tooltip.style.left = @getAttribute('xposition') + 'px'
+
+        if @hasAttribute 'yposition'
+          @$.tooltip.style.top = @getAttribute('yposition') + 'px'
+
         offsetX = 'left'
         if tip.left < xStep*2
           offsetX = 'right'

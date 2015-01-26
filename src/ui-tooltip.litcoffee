@@ -29,6 +29,8 @@ This will place the tooltip in an optimal viewing position based on the client
 screen size. This gets called automatically on hover.
 
       position: ->
+        if @hasAttribute 'display'
+          return
         tip = @getBoundingClientRect()
         body = document.querySelector('body').getBoundingClientRect()
         xStep = document.documentElement.clientWidth / 3

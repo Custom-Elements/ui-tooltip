@@ -2,10 +2,9 @@
   "name": "ui-tooltip",
   "version": "0.0.0",
   "dependencies": {
-    "polymer-serve": "git://github.com/custom-elements/polymer-serve",
+    "polymer-serve": "^0.0.30",
     "polymer": "git://github.com/custom-elements/polymer#master",
-    "ui-styles": "git://github.com/custom-elements/ui-styles#master",
-    "ui-fonts": "git://github.com/custom-elements/ui-fonts#master"
+    "ui-styles": "git://github.com/custom-elements/ui-styles#master"
   },
   "license": "ISC",
   "scripts": {

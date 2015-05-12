@@ -52,15 +52,14 @@ screen size. This gets called automatically on hover.
 
 
       show: ->
+        @position()
         clearTimeout @delayFunc
         @delayFunc = setTimeout =>
-          @position()
           @$.tooltip.classList.remove "hidden"
         , Number(@delay)
 
       hide: ->
         clearTimeout @delayFunc
-        @position()
         @$.tooltip.classList.add "hidden"
 
 
@@ -88,8 +87,11 @@ will be updated dynamcially as elements are moved or scrolled.
 
       attached: ->
         @delay ||= 333
-        @position()
 
       domReady: ->
 
       detached: ->
+
+      publish:
+        display:
+          reflect: true
